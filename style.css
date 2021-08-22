@@ -1,0 +1,131 @@
+:root{
+    --White : #ffffff;
+    --Black : #000000;
+    --GreyClear : #f8f9fa;
+    --Grey : #999999;
+    --GreyDark : #4a4a4b;
+    --Green : #a2c0be;
+    --GreenDark : #567876;
+    --Orange : #ff9900;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin: 0%;
+}
+.container{
+    width: 60%;
+    margin: auto;
+}
+header{
+    background-color: var(--GreyClear);
+}
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+    gap : 50px
+}
+header nav ul a{
+    color : var(--Grey);
+    text-decoration: none;
+}
+a.logo{
+    font-size: 2em;
+    color : var(--Black);
+    text-decoration: none;
+}
+.orange{
+    color: orange;
+}
+header section {
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+header section img{
+    width: 35%;
+}
+header section h1{
+    margin: 0%;
+    font-size: 3em;
+    font-weight: lighter;
+}
+header section p {
+    margin: 0%;
+    font-size: 1.3em;
+    font-weight: lighter;
+    color: var(--Grey);
+}
+main .welcome{
+    text-align: center;
+    width: 42%;
+    margin: auto;
+}
+main .welcome h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+main .welcome p {
+    margin: 0%;
+    font-weight: lighter;
+    color : var(--Grey)
+}
+main .card{
+    display : flex;
+    justify-content: space-between;
+    gap : 150px;
+    margin : 100px 0;
+    align-items: center;
+    text-align: right;
+}
+main .card img{
+    width: 50%;
+    box-shadow: 10px 10px 0 var(--Green);
+}
+main .card h3{
+    font-size: 2em;
+    font-weight: normal;
+    margin: 0;
+}
+main .card p{
+    color : var(--Grey);
+    margin-bottom: 40px;
+}
+main .cards .card:nth-child(2){
+    text-align: left;
+}
+main .card div{
+    width: 50%;
+}
+.btn{
+    background-color: var(--Green);
+    color : var(--White);
+    text-decoration: none;
+    border-radius: 50px;
+    padding : 12px 32px;
+    transition: background-color 500ms;
+}
+.btn:hover{
+    background-color: var(--Black);
+    transition: background-color 500ms;
+}
+footer{
+    background-color: var(--GreyDark);
+    height: 6em;
+    padding: 10px;
+}
+footer p{
+    color: var(--White);
+    text-align: center;
+    transform: translateY(20px);
+    font-size: 13px;
+}
